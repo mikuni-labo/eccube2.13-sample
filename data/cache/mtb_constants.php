@@ -267,7 +267,7 @@ define('SEARCH_CATEGORY_LEN', 18);
 /** ファイル名表示文字数 */
 define('FILE_NAME_LEN', 10);
 /** クッキー保持期限(日) */
-define('COOKIE_EXPIRE', 365);
+define('COOKIE_EXPIRE', 30);
 /** カテゴリ区切り文字 */
 define('SEPA_CATNAVI', " > ");
 /** 会員情報入力 */
@@ -486,3 +486,4 @@ define('PENDING_ORDER_CANCEL_TIME', 900);
 define('PENDING_ORDER_CANCEL_FLAG', true);
 /** API機能を有効にする(true:する false:しない) */
 define('API_ENABLE_FLAG', false);
+
