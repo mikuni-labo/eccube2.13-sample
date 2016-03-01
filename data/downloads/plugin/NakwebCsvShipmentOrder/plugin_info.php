@@ -28,23 +28,23 @@
  */
 class plugin_info{
     /** プラグインコード(必須)：プラグインを識別する為キーで、他のプラグインと重複しない一意な値である必要がありま. */
-    static $PLUGIN_CODE       = "NakwebCsvShipmentOrder";
+    static $PLUGIN_CODE       = "eccube2_plugin_sample";
     /** プラグイン名(必須)：EC-CUBE上で表示されるプラグイン名. */
-    static $PLUGIN_NAME       = "配送先別 商品別 CSV ダウンロード";
+    static $PLUGIN_NAME       = "学習用サンプルプラグイン";
     /** クラス名(必須)：プラグインのクラス（拡張子は含まない） */
-    static $CLASS_NAME        = "NakwebCsvShipmentOrder";
+    static $CLASS_NAME        = "Eccube2_Plugin_Sample";
     /** プラグインバージョン(必須)：プラグインのバージョン. */
-    static $PLUGIN_VERSION    = "1.5";
+    static $PLUGIN_VERSION    = "1.0.0";
     /** 対応バージョン(必須)：対応するEC-CUBEバージョン. */
     static $COMPLIANT_VERSION = "2.12.2 ～ 2.13.5";
     /** 作者(必須)：プラグイン作者. */
-    static $AUTHOR            = "株式会社ナックウェブ";
+    static $AUTHOR            = "Kuniyasu_Wada";
     /** 説明(必須)：プラグインの説明. */
-    static $DESCRIPTION       = "受注番号別，商品別 の受注内容詳細をCSV形式でダウンロード出来ます。";
+    static $DESCRIPTION       = "学習用のサンプルプラグインです。";
     /** プラグインURL：プラグイン毎に設定出来るURL（説明ページなど） */
-    static $PLUGIN_SITE_URL   = "http://www.nakweb.com/";
+    static $PLUGIN_SITE_URL   = "http://necoshop.net/";
     /** プラグイン作者URL：プラグイン毎に設定出来るURL（説明ページなど） */
-    static $AUTHOR_SITE_URL   = "http://www.nakweb.com/";
+    static $AUTHOR_SITE_URL   = "http://necoshop.net/";
     /** フックポイント：フックポイントとコールバック関数を定義します */
     static $HOOK_POINTS       = array(
         array("LC_Page_Admin_Order_action_after", 'output_nakweb_csv001')
