@@ -23,6 +23,8 @@
 require_once './require.php';
 require_once CLASS_EX_REALDIR . 'page_extends/LC_Page_Index_Ex.php';
 
+var_dump($_COOKIE);
+
 $objPage = new LC_Page_Index_Ex();
 $objPage->init();
 $objPage->process();

@@ -22,6 +22,14 @@
 
 <!--{strip}-->
     <body class="<!--{$tpl_page_class_name|h}-->">
+    
+    
+    <button id="CookieWrite">クッキー書き込み</button>
+    <button id="CookieRead">クッキー読み込み</button>
+    <button id="CookieDelete">クッキー削除</button>
+    <div id="Message"></div>
+    
+    
         <!--{$GLOBAL_ERR}-->
         <noscript>
             <p>JavaScript を有効にしてご利用下さい.</p>

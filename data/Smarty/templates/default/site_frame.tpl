@@ -91,6 +91,39 @@
     <!--{/if}-->
     <!--{* ▲Head COLUMN*}-->
 <!--{/strip}-->
+
+
+<script type="text/javascript">
+$(window).load(function() {
+    var url = 'http://sample_codes.local/Cokkie/sample2_iframe/';
+
+    $('#CookieWrite').click(function(){
+      setElement(url + 'cookie_write.php');
+      $('#Message').html('クッキーを書き込みました');
+    });
+    $('#CookieRead').click(function(){
+      setElement(url + 'cookie_read.php');
+    });
+    $('#CookieDelete').click(function(){
+      setElement(url + 'cookie_delete.php');
+      $('#Message').html('クッキーを削除しました');
+    });
+});
+
+function setElement(url) {
+    url = url + '?' + String((new Date()).getTime());
+    scriptElement = document.createElement('script');
+    scriptElement.type = 'text/javascript';
+    scriptElement.src = url;
+    document.body.appendChild(scriptElement);
+}
+
+function cookie_read(data) {
+    $('#Message').html(data);
+}
+</script>
+
+
 </head>
 
 <!-- ▼BODY部 スタート -->
